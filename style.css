@@ -1,0 +1,826 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: montserrat;
+    scroll-behavior: smooth;
+
+
+}
+
+#wrapper {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+#section1 {
+    z-index: 1;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #71818E;
+}
+
+#nav {
+    position: relative;
+    z-index: 9999999999;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.9vw 3vw 2.3vw 3vw;
+}
+
+#menu #circle {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.6rem;
+}
+
+#circle .line1 {
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+}
+
+#circle .line2 {
+    margin-top: 1vh;
+    width: 100%;
+    height: 1.5px;
+    background-color: white;
+}
+
+.button.outline {
+    font-family: montserrat;
+    z-index: 7000;
+    background-color: var(--transparent);
+    border: 1px solid rgba(244, 244, 244, .8);
+    padding: 1rem 1.25rem 0.8rem;
+    transition: background-color .3s cubic-bezier(.645, .045, .355, 1), color .3s cubic-bezier(.645, .045, .355, 1);
+    position: relative;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f4f4f4;
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+#main-img {
+    z-index: 1;
+    position: absolute;
+    top: -1.2vw;
+    /* width: 55vw; */
+    scale: 1.1;
+    height: 102.6vh;
+    right: 8vw;
+}
+
+#section1 #content {
+    position: absolute;
+    top: 14vw;
+    left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 56%;
+    height: 26vh;
+    /* background-color: #444343; */
+    z-index: 9999999;
+}
+
+#content #button {
+    width: fit-content;
+    padding: 1vw 1.5vw 1vw 1.5vw;
+    background-color: #f4f4f4;
+    border-radius: 0.5vw;
+}
+
+#content #button a {
+    text-decoration: none;
+    font-size: 0.7vw;
+    font-family: montserrat;
+    font-weight: 600;
+    color: rgb(60, 60, 60);
+}
+
+#section1 #content h1 {
+    font-family: montserrat;
+    letter-spacing: -.18rem;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1;
+    color: #f4f4f4;
+}
+
+#bottom-text h1 {
+    position: absolute;
+    z-index: 999999;
+    bottom: -6.6vw;
+    left: 4vw;
+    color: #f4f4f4;
+    font-size: 20vw;
+    font-family: Neue Haas Unica Pro;
+    font-weight: 500;
+
+}
+
+#awwards-logo {
+    position: fixed;
+    right: 0;
+    top: 40vh;
+    z-index: 99;
+}
+
+#section2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(78, 79, 79); */
+}
+
+#grid-intro {
+    position: absolute;
+    top: 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    width: 100%;
+    height: 30vh;
+    /* background-color: #9cc9ed; */
+    padding: 0vw 2.5vw 0vw 2.5vw;
+}
+
+.subtitle-wrapper {
+    align-items: center;
+    font-size: .9em;
+    font-weight: 500;
+    display: flex;
+    width: 185px;
+    justify-content: space-between;
+    /* background-color: aqua; */
+
+}
+
+#subtitle-wrapper-all {
+    width: 35%;
+}
+
+.subtitle-wrapper .subtitle-circle {
+    width: 0.6em;
+    height: 0.6em;
+    background-image: linear-gradient(to right, red, rgb(255, 162, 0));
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
+}
+
+#grid-intro #word {
+    width: 70%;
+    font-size: 1.9em;
+    font-weight: 400;
+    line-height: 1.3;
+    font-family: Neue Haas Unica Pro;
+    /* background-color: aqua; */
+}
+
+#grid-intro #word P{
+    opacity: 0;
+}
+
+#section3 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 116.5vh;
+}
+
+#section3 .heading-outline h1 {
+    margin-top: -6vw;
+    font-size: 40vw;
+    font-weight: 500;
+    font-family: Neue Haas Unica Pro;
+    /* background-color: #71818E; */
+    display: inline;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-fill-color: inherit;
+    background-clip: border-box
+}
+
+.heading-outline {
+    display: flex;
+    justify-content: center;
+}
+
+.heading-outline img {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)5s;
+    position: absolute;
+    top: 6vw;
+    width: 27vw;
+}
+
+#botton-text-nova {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    bottom: 5vw;
+    left: 2.5vw;
+    width: 27vw;
+    height: 10.3vw;
+    /* background-color: aqua; */
+    font-family: Neue Haas Unica Pro;
+}
+
+#botton-text-nova p {
+    font-size: 1.2vw;
+    color: #393939;
+}
+
+#botton-text-nova h1 {
+    font-size: 2.4vw;
+    color: #393939;
+}
+
+#section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6vw;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #37383E;
+
+}
+
+#section4 .container {
+    z-index: 5;
+    width: 100%;
+    font-family: Neue Haas Unica Pro;
+    /* background-color: #b53a3a; */
+}
+
+#section4 .container #speaker2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section4 .container #speaker2 img {
+    width: 80vw;
+    margin-top: 14vw;
+}   
+
+#section4 .container .main-text{
+    margin: auto;
+    width: 59%;
+    text-align: center;
+    /* background-color: #bd8989; */
+}
+#section4 .container .main-text h1 {
+    letter-spacing: -.14rem;
+    font-size: 7.3em;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #f4f4f4;
+    visibility: hidden;
+    opacity: 0;
+    /* background-color: rgb(18, 54, 85); */
+}
+
+.feature-content {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5vw 10vw 0vw 2.5vw;
+    text-align: start;
+    /* background-color: #ffffff; */
+}
+
+.feature-box {
+    width: 25%;
+    /* background-color: aqua; */
+}
+
+.logo-box {
+    width: fit-content;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    /* background-color: #fff; */
+}
+
+.feature-box>.logo-box>h1 {
+    margin-bottom: 0.7vw;
+    font-size: 1.8vw;
+    color: #f4f4f4;
+    font-weight: 500;
+}
+
+.feature-content>.feature-box>p {
+    color: #c0c0c0;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.logo-box i {
+    margin-top: -10px;
+    font-size: 2.1vw;
+    color: #f4f4f4;
+    font-weight: lighter;
+}
+
+/* Section5 */
+
+#section5 {
+    position: relative;
+    padding-top: 6vw;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+#section5 #word p{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#section5 .feature-text {
+    margin-left: 2.5vw;
+    width: 80%;
+    font-family: Neue Haas Unica Pro;
+    font-size: 3vw;
+    line-height: 6.9vw;
+    color: #2f3035;
+    /* background-color: aqua; */
+}
+
+#section5 .feature-text h1{
+    visibility: hidden;
+    opacity: 0;
+}
+
+#section5 .use {
+    position: absolute;
+    top: 26vw;
+
+}
+
+#section5 img {
+    width: 80vw;
+    margin-top: 30vw;
+}
+
+#section5 #speaker3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section6 {
+    position: relative;
+    padding-top: 6vw;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+
+}
+
+#section6 #specification {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    margin-left: 3.5vw;
+}
+
+#section6 #specification h1 {
+    font-family: Neue Haas Unica Pro;
+    font-weight: 500;
+    letter-spacing: -0.1vw;
+    font-size: 7vw;
+    color: #27282d;
+}
+
+#section6 .wrapper {
+    padding: 2.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+
+#section6 .wrapper h1 {
+    margin-bottom: 1.4vw;
+    font-size: 1.7vw;
+    font-weight: 500;
+    color: #3a3a3b;
+}
+.specification-all{
+    font-size: 1vw;
+}
+#section6 .left-wrapper {
+    width: 45%;
+    /* background-color: #7d7d7d; */
+}
+
+#section6 .wrapper .line {
+    width: 100%;
+    height: 0.2px;
+    background-color: #8d8c8c;
+}
+
+#section6 .list-wrapper {
+    display: flex;
+    height: 40px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#section6 .list-wrapper .left-right {
+    width: 50%;
+}
+
+#section6 .right-wrapper {
+    width: 45%;
+    /* background-color: #f58686; */
+}
+
+#section6 #speaker4 img {
+    width: 80vw;
+    /* margin-top: 5vw; */
+}
+
+#section6 #speaker4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dbdbdb;
+}
+
+#section7 {
+    font-family: Neue Haas Unica Pro;
+    position: relative;
+    width: 100%;
+    min-height: 160vh;
+    background-color: #3A3C42;
+
+}
+
+#section7 #additonal-feat-text {
+    font-size: 3vw;
+    padding: 10vw 0vw 0vw 2.5vw;
+    color: #f4f4f4;
+    line-height: 7vw;
+    font-weight: 500;
+}
+
+#section7 #arrow-line .wrapper {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#section7 #arrow-line .box {
+    font-size: 1.5vw;
+    width: 70px;
+    height: 50px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+#section7 #arrow-line {
+    padding: 10vw 2.9vw 4vw 0vw;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: #8a9dff; */
+    align-items: center;
+}
+
+#section7 #arrow-line .lines-parent {
+    width: 300px;
+    height: 2px;
+    background-color: #b0b0b059;
+}
+
+#section7 .lines-parent .line {
+    width: 50px;
+    height: 100%;
+    background-color: #f4f4f4;
+
+}
+
+.scroll-bar {
+    width: 100%;
+    position: absolute;
+    overflow: scroll;
+}
+
+.scroll-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#section7 .feat-box {
+    display: flex;
+    gap: 20px;
+    padding: 2.5vw;
+    width: 200%;
+    height: 35vw;
+    /* background-color: #f3f3f3; */
+}
+
+#section7 .feat-box .box {
+    border-radius: 10px;
+    position: relative;
+    padding: 2.5vw;
+    width: calc(200%/6);
+    height: 100%;
+    background-color: #34363A;
+}
+
+#section7 .box h1 {
+    color: #f4f4f4;
+    font-family: 500;
+    margin-bottom: 10px;
+}
+
+#section7 .box p {
+    font-size: 1.3vw;
+    color: #bbbbbb;
+}
+
+#section7 .feat-logo img {
+    width: 8vw;
+    color: #8d8c8c;
+}
+
+#section7 .feat-logo {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 7vw 0vw 0vw 0vw;
+    height: fit-content;
+    align-items: end;
+    /* background-color: #dbdbdb; */
+}
+
+#section8 {
+    font-family: Neue Haas Unica Pro;
+    position: relative;
+    width: 100%;
+    min-height: 150vh;
+    background-color: #F4F4F4;
+}
+
+#section8 h1 {
+    padding: 8vw 2.5vw 2vw 2.5vw;
+    font-size: 7vw;
+}
+
+#section8 .box-wrapper{
+    display: flex;
+    gap: 30px;
+    padding: 2.5vw;
+    width: 100%;
+    height: 95vh;
+    /* background-color: #b53a3a; */
+}    
+#section8 .news-box{
+    border-radius: 10px;
+    position: relative;
+    width: calc(100%/3);
+    height: 100%;
+    /* background-color: #34363A; */
+}
+.news-img-wrapper{
+    
+    background-color: #27282d;
+}
+
+#section8 .news-box .news-img{
+    overflow: hidden;
+    width: 100%;
+    height: 65%;
+    /* background-color: #ff7350; */
+}
+#section8 .news-box .news-img .img-box1{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* background-color: #e9e9e9; */
+    background-image: url("./assests/news-img1.webp");
+    background-position: center;
+    background-size: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+#section8 .news-box .news-img :hover{
+    scale: 1.1;
+}
+#section8 .news-box .news-img2:hover{
+    scale: 1.1;
+}
+#section8 .news-box .news-img3:hover{
+    scale: 1.1;
+}
+
+#section8 .news-box .news-img .img-box2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #b53a3a;
+    background-image: url("./assests/news-img2.webp");
+    background-position: center;
+    background-size: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+#section8 .news-box .news-img .img-box3{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #b53a3a;
+    background-image: url("./assests/news-img3.webp");
+    background-position: center;
+    background-size: cover;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)3s;
+}
+
+#section8 .news-box a{
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: #3A3C42;
+}
+
+#section8 .news-box h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.1vw;
+    font-weight: 400;
+    line-height: 2.6vw;
+
+}
+
+
+
+
+
+#footer {
+    padding: 2.5vw;
+    font-family: Neue Haas Unica Pro;
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #E4E4E4;
+}
+
+#footer #nova-text{
+    /* background-color: #b53a3a; */
+    font-weight: 300;
+    width: 48%;    
+}
+
+#footer #nova-text h1{
+    visibility: hidden;
+    opacity: 0;
+    font-weight: 500;
+    font-size: 15vw;
+
+}
+
+#footer .cont-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: #2f3035; */
+}
+
+#footer #special-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 70%;
+    /* background-color: #fff; */
+}
+
+#footer #special-link a{
+    font-size: 1.7vw;
+    text-decoration: none;
+    color: #27282d;
+}
+
+#footer #special-link sup{
+    font-size: 0.8vw;
+    font-weight: 500;
+    color: #ff7350;
+}
+
+#footer .back-to-home{
+    width: 10%;
+    height: 70%;
+}
+
+#footer .back-to-home a{
+    text-decoration: none;
+    color: #27282d;
+}
+
+#footer .line{
+    width: 100%;
+    height: 1px;
+    background-color: #727272;
+}
+
+#footer .copy-text{
+    font-size: 0.9vw;
+    height: 40px;
+    color: #5a5b5b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #27282d; */
+}
+
+#loader{
+    position: absolute;
+    font-family: Neue Haas Unica Pro;
+    z-index: 999999;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rght-txt{
+    width: 53%;
+    right: 0%;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: #612626; */
+}
+#rght-txt h1{
+    /* background-color: #314bcd; */
+    font-size: 1.6vw;
+    font-weight: 300;
+    margin-left: -180px;
+}
+
+#ver-line{
+    margin: 0px 20px 0px 6px;
+    width: 1px;
+    background-color: #27282d;
+    height: 0%;
+}
+
+#lft-txt{
+    width: 42%;
+    left: 0%;
+    position: absolute;
+    overflow: hidden;
+    /* background-color: #fd4949; */
+}
+#lft-txt h1{
+    /* position: absolute; */
+    /* background-color: #6a83ff; */
+    font-size: 1.7vw;
+    font-weight: 700;
+    z-index: 999999;
+    margin-left: 79px;
+}
+
+#nova-effect{
+    /* overflow: hidden; */
+    width: 173px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   /* background-color: #ff9a9a; */
+}
